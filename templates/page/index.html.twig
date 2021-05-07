@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Hello PageController        
+            
+        
+    
+{% endblock %}
+
+{% block body %}
+    <p>
+        <a href="{{ path('chart') }}">
+            Graphics
+                    
+        </a>
+    </p>
+    <p>
+        Hello
+                    
+            
+    </p>
+
+    <figure>
+
+        <img src="{{data_uri_thumbnail('ananas.jpg', 8, 6)}}" {{ stimulus_controller('symfony/ux-lazy-image/lazy-image') }} data-hd-src="/ananas.jpg" alt="description" width="800" height="600"></figure>
+
+    {% endblock %}
+    

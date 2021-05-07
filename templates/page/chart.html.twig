@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Hello PageController 
+        
+    
+{% endblock %}
+
+{% block body %}
+
+<p><a href="{{path('home')}}">Home Page</a></p>
+
+    <div class="container has-text-centered my my-6 py-6">
+        <div class="columns is-vcentered">
+            <div class"colum is-5">
+                {{ render_chart(chart) }}
+            </div>
+            <div class"colum is-6 is-offset-1">
+                <h1 class="title is-2">
+                    Ceci est un graphique
+                                
+                </h1>
+                <h2 class="subtitle is-4">
+                    Pour montrer que les chiffres ça peut être rigolo
+                                
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container has-text-centered my my-6 py-6">
+        <div class="columns is-vcentered">
+            <div class"colum is-6 is-offset-1">
+                <h1 class="title is-2">
+                    Et du camembert
+                                
+                </h1>
+                <h2 class="subtitle is-4">
+                    Pour les amateurs de fromage              
+                </h2>
+            </div>
+            <div class="column is-5">
+        {{ render_chart(camembert) }}</div>
+        </div>
+    </div>
+
+
+    {% endblock %}
+    
